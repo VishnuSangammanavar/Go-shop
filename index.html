@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go-Shop</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Icons link -->
+    <script src="https://kit.fontawesome.com/aca593e5d3.js" crossorigin="anonymous"></script>
+
+    <!-- main style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== Top Bar ===== -->
+    <section id="topbar">
+        <div class="container">
+            <div class="contact-info">
+                <i class="fa-regular fa-envelope"></i><a href="mailto:contact@example.com">abc@gmail.com</a>
+                <i class="fa-solid fa-phone phone"></i><a href="tel :+91 9876543210">+91 9876543210</a>
+            </div>
+            <div class="actions">
+                <a href="#" class="btn">Login</a>
+                <a href="#" class="signup">Sign Up</a>
+            </div>
+        </div>
+    </section><!-- End Top Bar -->
+
+    <section id="top" class="top">
+
+        <div class="logo">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h1>Go-Shop</h1>
+        </div>
+
+        <div class="search-bar">
+            <input type="search" name="search" id="search" placeholder="Search for the items"><i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="profile">
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </section>
+
+    <header id="header">
+    
+        <!-- ===== nav-bar Section ===== -->
+        <nav class="nav-bar">
+            <ul id="sidemenu">
+                <li><a href="#" class="nav-item active">Home</a></li>
+                <li class="dropdown"><a href="#">Categories <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="box">
+                        <div>
+                            <li>
+                                <p><span>Electonics</span></p>
+                                <li><a href="">Washing Machine</a></li>
+                                <li><a href="">Telivision</a></li>
+                                <li><a href="">AC</a></li>
+                                <li><a href="">Vacum clener</a></li>
+                                <li><a href="">Desktop</a></li>
+                                <li><a href="">Laptops</a></li>
+                            </li>
+                        </div>
+                        <div>
+                            <li>
+                                <p><span>Men's</span></p>
+                                <li><a href="">T-shirt</a></li>
+                                <li><a href="">Formals</a></li>
+                                <li><a href="">Blazer</a></li>
+                                <li><a href="">Kurta</a></li>
+                                <li><a href="">Watches</a></li>
+                                <li><a href="">Foot wear</a></li>
+                            </li>
+                        </div>
+                        <div>
+                            <li>
+                                <p><span>Women's</span></p>
+                                <li><a href="">Dress</a></li>
+                                <li><a href="">Saree</a></li>
+                                <li><a href="">Kurta</a></li>
+                                <li><a href="">Hand Bags</a></li>
+                                <li><a href="">Makeup-kit</a></li>
+                                <li><a href="">Coat</a></li>
+                            </li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Men's <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="">T-shirt</a></li>
+                        <li><a href="">Formals</a></li>
+                        <li><a href="">Blazer</a></li>
+                        <li><a href="">Kurta</a></li>
+                        <li><a href="">Watches</a></li>
+                        <li><a href="">Foot wear</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Women's <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="">Dress</a></li>
+                        <li><a href="">Saree</a></li>
+                        <li><a href="">Kurta</a></li>
+                        <li><a href="">Hand Bags</a></li>
+                        <li><a href="">Makeup-kit</a></li>
+                        <li><a href="">Coat</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Electonics</a></li>
+                <li><a href="#">shoes</a></li>
+                <li><a href="#">watches</a></li>
+                <li><a href="#footer">Contacts</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+        </nav><!-- End nav-bar -->
+
+    </header>
+
+    <main id="main">
+
+        <!-- ===== Hero Section ===== -->
+        <section id="hero" class="hero">
+            <div class="container">
+
+                <div class="content">
+                    <p class="title">Trending Items</p>
+                    <h2><span>Latest</span> <br>fashion sale</h2>
+                    <p>starting at Rs 999.00</p>
+                    <div class="shop-now">
+                        <a href="#products" class="btn">Shop now</a>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End Hero Section -->
+
+        <!-- ===== Hero Section ===== -->
+        <section id="services" class="services">
+            <div class="container">
+
+                <div class="service-list">
+                    <i class="fa-solid fa-cart-flatbed"></i>
+                    <div class="content">
+                        <h2>Free Shipping</h2>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+                <div class="service-list">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="content">
+                        <h2>Dedicated Support</h2>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+                <div class="service-list">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <div class="content">
+                        <h2>Money Back Guarantee</h2>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+                <div class="service-list">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <div class="content">
+                        <h2>Quick Delivery</h2>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+            </div>            
+        </section><!-- End Services Section -->
+
+        <!-- ===== Categories Section ===== -->
+        <section id="categories" class="categories">
+            <div class="container">
+
+                <div class="row">
+                    <div class="categories-list" id="list1">
+                        <div class="content">
+                            <h2>Glasses</h2>
+                            <p>Starting at $99.00</p>
+                        </div>
+                        <img src="./img/cetegories/category-1.png" alt="">
+                    </div>
+                    <div class="categories-list" id="list2">
+                        <div class="content">
+                            <h2>Bags</h2>
+                            <p>Upto 30% Off</p>
+                        </div>
+                        <img src="./img/cetegories/category-2.png" alt="">
+                    </div>
+                    <div class="categories-list" id="list3">
+                        <div class="content">
+                            <h2>Men's Footwear</h2>
+                            <p>Upto 40% Off</p>
+                        </div>
+                        <img src="./img/cetegories/category-5.png" alt="">
+                    </div>
+                    <div class="categories-list" id="list4">
+                        <div class="content">
+                            <h2>Headphones</h2>
+                            <p>Starting at $99.00</p>
+                        </div>
+                        <img src="./img/cetegories/category-4.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End Categories Section -->
+
+        <!-- ===== Products Section ===== -->
+        <section id="products" class="products">
+            <div class="container">
+
+                <div class="side-bar">
+                    <div class="side-item">
+                        <ul>
+                            <p><span>Category</span></p>
+                            <li class="dropdown"><a href="#"><span>Clothes</span> <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="#">Kid's</a></li>
+                                    <li><a href="#">Men's</a></li>
+                                    <li><a href="#">Women's</a></li>
+                                    <li><a href="#">Hoodies</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#"><span>Footwear</span> <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="#">Sports</a></li>
+                                    <li><a href="#">Formals</a></li>
+                                    <li><a href="#">Snikers</a></li>
+                                    <li><a href="#">Casuals</a></li>
+                                    <li><a href="#">Kid's</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#"><span>Jewelary</span> <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="#">Diamond</a></li>
+                                    <li><a href="#">Rings</a></li>
+                                    <li><a href="#">Nekles</a></li>
+                                    <li><a href="#">Bengals</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#"><span>Glasses</span> <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="#">Sun Glasses</a></li>
+                                    <li><a href="#">Lens</a></li>
+                                    <li><a href="#">Frames</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#"><span>Bags</span> <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="#">School Bags</a></li>
+                                    <li><a href="#">Ladies Hand Bags</a></li>
+                                    <li><a href="#">Luggage</a></li>
+                                    <li><a href="#">Suitcase</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="best-sellers">
+
+                        <div class="title">
+                            <h2>Best Sellers</h2>
+                        </div>
+
+                        <div class="seller-item">
+                            <img src="./img/cetegories/category-5.png" alt="No image">
+                            <div class="info">
+                                <h2>Foot wear</h2>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                                <p><del>$6.00</del> $4.00</p>
+                            </div>
+                        </div>
+                        <div class="seller-item">
+                            <img src="./img/Men/men-3.png" alt="No image">
+                            <div class="info">
+                                <h2>Shirt</h2>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                                <p><del>$10.00</del> $5.00</p>
+                            </div>
+                        </div>
+                        <div class="seller-item">
+                            <img src="./img/cetegories/category-2.png" alt="No image">
+                            <div class="info">
+                                <h2>Hand Bag</h2>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                                <p><del>$6.00</del> $4.00</p>
+                            </div>
+                        </div>
+                        <div class="seller-item">
+                            <img src="./img/headphone/headphone-4.png" alt="No image">
+                            <div class="info">
+                                <h2>Headphone</h2>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                                <p><del>$15.00</del> $10.00</p>
+                            </div>
+                        </div>
+                        <div class="seller-item">
+                            <img src="./img/women/women-1.png" alt="No image">
+                            <div class="info">
+                                <h2>Dress</h2>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                                <p><del>$10.00</del> $8.00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="product-container">
+                    <div class="product-item">
+                        <img src="./img/Men/men-3.png" alt="">
+                        <div class="info">
+                            <h2>Shirt</h2>
+                            <p>Pure Garment Dyed Cotten Shirt</p>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                            <p class="price">$48.00 <del>$75.00</del></p>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/cetegories/category-2.png" alt="">
+                        <div class="info">
+                            <h2>Bag</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                            <p class="price">$48.00 <del>$75.00</del></p>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/women/women-2.png" alt="">
+                        <div class="info">
+                            <h2>Dress</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                            <p class="price">$48.00 <del>$75.00</del></p>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/Men/men-2.png" alt="">
+                        <div class="info">
+                            <h2>Shirt</h2>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                            <p class="price">$48.00 <del>$75.00</del></p>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/headphone/headphone-1.png" alt="">
+                        <div class="info">
+                            <h2>Headphone</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur.</p>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                            <p class="price">$48.00 <del>$75.00</del></p>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/cetegories/category-3.png" alt="">
+                        <div class="info">
+                            <h2>Footwear</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                            <p class="price">$48.00 <del>$75.00</del></p>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/Men/men-6.png" alt="">
+                        <div class="info">
+                            <h2>Blazer</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                            <p class="price">$48.00 <del>$75.00</del></p>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/headphone/headphone-2.png" alt="">
+                        <div class="info">
+                            <h2>Headphone</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                            <p class="price">$48.00 <del>$75.00</del></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Products Section -->
+
+        <!-- ===== Headphone Section ===== -->
+        <section id="headphone" class="headphone">
+            <div class="container">
+
+                <div class="picture">
+                    <img src="./img/headphone/headphone-1.png" alt="headphone">
+                </div>
+                <div class="content">
+                    <h2>Get Upto 20% off on your first order</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, accusantium.</p>
+                    <a href="#" class="btn">Buy now</a>
+                </div>
+
+            </div>
+        </section><!-- End Headphone Section -->
+
+        <!-- ===== Collection Section ===== -->
+        <section id="collection" class="collection">
+            <div class="container">
+
+                <div class="side-bar">
+
+                    <div class="best-sellers">
+                        <div class="title">
+                            <h2>Summer Collections</h2>
+                        </div>
+
+                        <div class="seller-item">
+                            <img src="./img/cetegories/category-5.png" alt="No image">
+                            <div class="info">
+                                <h2>Foot wear</h2>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                                <p><del>$6.00</del> $4.00</p>
+                            </div>
+                        </div>
+                        <div class="seller-item">
+                            <img src="./img/Men/men-3.png" alt="No image">
+                            <div class="info">
+                                <h2>Foot wear</h2>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                                <p><del>$6.00</del> $4.00</p>
+                            </div>
+                        </div>
+                        <div class="seller-item">
+                            <img src="./img/cetegories/category-2.png" alt="No image">
+                            <div class="info">
+                                <h2>Foot wear</h2>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                                <p><del>$6.00</del> $4.00</p>
+                            </div>
+                        </div>
+                        <div class="seller-item">
+                            <img src="./img/headphone/headphone-4.png" alt="No image">
+                            <div class="info">
+                                <h2>Foot wear</h2>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                                <p><del>$6.00</del> $4.00</p>
+                            </div>
+                        </div>
+                        <div class="seller-item">
+                            <img src="./img/women/women-1.png" alt="No image">
+                            <div class="info">
+                                <h2>Foot wear</h2>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                                <p><del>$6.00</del> $4.00</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="collection-container" style="background-image: url('./img/hero-3.jpg');">
+                    <div class="content">
+                        <p>25% Discount</p>
+                        <h2>Summer Collection</h2>
+                        <div class="txt">
+                            <p>starting @ $10</p>
+                        </div>
+                        <a href="#">shop now</a>
+                    </div>
+                </div>
+
+                <div class="services">
+                    <div class="title">
+                        <h2>Our services</h2>
+                    </div>
+                    <div class="service-items">
+                        <div class="service-list">
+                            <i class="fa-solid fa-cart-flatbed"></i>
+                            <div class="content">
+                                <h2>Free Shipping</h2>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+        
+                        <div class="service-list">
+                            <i class="fa-solid fa-headset"></i>
+                            <div class="content">
+                                <h2>Dedicated Support</h2>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+        
+                        <div class="service-list">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                            <div class="content">
+                                <h2>Money Back Guarantee</h2>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+        
+                        <div class="service-list">
+                            <i class="fa-solid fa-truck-fast"></i>
+                            <div class="content">
+                                <h2>Quick Delivery</h2>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End Collection Section -->
+
+        <!-- ===== Collections Section ===== -->
+        <section id="collections" class="collections">
+            <div class="container">
+
+                <div class="collection-list">
+                    <div class="collection-item" style="background-image: url('./img/hero-1.jpg')">
+                        <div class="info">
+                            <h2>Lorem, dolor.</h2>
+                            <p>Lorem ipsum sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="collection-item" style="background-image: url('./img/hero-1.jpg')">
+                        <div class="info">
+                            <h2>Lorem, dolor.</h2>
+                            <p>Lorem dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="collection-item" style="background-image: url('./img/hero-1.jpg')">
+                        <div class="info">
+                            <h2>Lorem, dolor.</h2>
+                            <p>Lorem dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="collection-item" style="background-image: url('./img/hero-1.jpg')">
+                        <div class="info">
+                            <h2>Lorem, dolor.</h2>
+                            <p>Lorem dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End Collections Section -->
+
+    </main><!-- End main Section -->
+
+    <!-- ===== footer ===== -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-list">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="info">
+                        <h4>Address</h4>
+                        <p>Abc Galli, Belagavi, 590021 Karnataka, India</p>
+                    </div>
+                </div>
+                <div class="footer-list">
+                    <div class="info">
+                        <h4>Usefull Links</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-list">
+                    <i class="fa-regular fa-clock"></i>
+                    <div class="info">
+                        <h4>Working Hours</h4>
+                        <p><b>Mon-Sun: </b>24x7</p>
+                    </div>
+                </div>
+                <div class="footer-list">
+                    <i></i>
+                    <div class="info">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <h4>Contact Details</h4>
+                        <p><b>Phone:</b> +91 987654321</p>
+                        <p><b>Email:</b> info@example.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; Copyright for 2023 - 24. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer><!-- End footer -->
+
+    <!-- main script -->
+    <script src="main.js"></script>
+
+</body>
+</html>
